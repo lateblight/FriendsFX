@@ -1,38 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <LangVersion>latest</LangVersion>
     <AssemblyName>FriendsFX</AssemblyName>
-    <RootNamespace>FriendsFX</RootNamespace>
-    <!-- Necessary for Dalamud plugins so they compile as libraries -->
+    <Title>FriendsFX</Title>
+    <Authors>Lateblight</Authors>
+    <Company>Lateblight</Company>
+    <Product>FriendsFX</Product>
+    <Description>Automatically manages battle effect visibilities for friends anywhere in the world.</Description>
+    <Punchline>Full battle effects for friends, limited effects otherwise!</Punchline>
+    <Version>1.1.0.0</Version>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
-
-  <!-- Dalamud Package Reference -->
-  <ItemGroup>
-    <PackageReference Include="DalamudLUA" Version="1.0.0" /> <!-- Fallback placeholder or use standard Dalamud pack -->
-  </ItemGroup>
-
-  <!-- Automated packaging target to generate latest.zip in bin/Release -->
-  <Target Name="PackagePlugin" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
-    <PropertyGroup>
-      <PluginStagingDir>$(OutputPath)FriendsFX\</PluginStagingDir>
-    </PropertyGroup>
-
-    <MakeDir Directories="$(PluginStagingDir)" />
-    
-    <Copy SourceFiles="$(OutputPath)$(TargetName).dll;
-                         $(OutputPath)$(TargetName).json;
-                         $(OutputPath)$(TargetName).deps.json" 
-          DestinationFolder="$(PluginStagingDir)"
-          ContinueOnError="true" />
-
-    <ZipDirectory
-      SourceDirectory="$(PluginStagingDir)"
-      DestinationFile="$(TargetDir)..\latest.zip"
-      Overwrite="true" />
-  </Target>
 
 </Project>

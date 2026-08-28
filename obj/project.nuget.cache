@@ -1,20 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "lvmxxvxEqBQ=",
-  "success": false,
+  "dgSpecHash": "L0KLs7XGC8g=",
+  "success": true,
   "projectFilePath": "C:\\Users\\backu\\Documents\\GitHub\\FriendsFX\\FriendsFX.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\backu\\.nuget\\packages\\dalamudpackager\\15.0.0\\dalamudpackager.15.0.0.nupkg.sha512",
+    "C:\\Users\\backu\\.nuget\\packages\\dotnet.reproduciblebuilds\\1.2.39\\dotnet.reproduciblebuilds.1.2.39.nupkg.sha512"
+  ],
   "logs": [
     {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'DalamudLUA (>= 1.0.0)' for 'net8.0'.",
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://nuget.dalamud.dev/v3/index.json.",
       "projectPath": "C:\\Users\\backu\\Documents\\GitHub\\FriendsFX\\FriendsFX.csproj",
+      "warningLevel": 1,
       "filePath": "C:\\Users\\backu\\Documents\\GitHub\\FriendsFX\\FriendsFX.csproj",
-      "libraryId": "DalamudLUA",
-      "targetGraphs": [
-        "net8.0"
-      ]
+      "targetGraphs": []
     }
   ]
 }

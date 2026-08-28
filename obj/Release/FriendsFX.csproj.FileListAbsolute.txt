@@ -1,9 +1,9 @@
+C:\Users\backu\Documents\GitHub\FriendsFX\bin\Release\FriendsFX.deps.json
+C:\Users\backu\Documents\GitHub\FriendsFX\bin\Release\FriendsFX.dll
 C:\Users\backu\Documents\GitHub\FriendsFX\obj\Release\FriendsFX.csproj.AssemblyReference.cache
 C:\Users\backu\Documents\GitHub\FriendsFX\obj\Release\FriendsFX.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\backu\Documents\GitHub\FriendsFX\obj\Release\FriendsFX.AssemblyInfoInputs.cache
 C:\Users\backu\Documents\GitHub\FriendsFX\obj\Release\FriendsFX.AssemblyInfo.cs
 C:\Users\backu\Documents\GitHub\FriendsFX\obj\Release\FriendsFX.csproj.CoreCompileInputs.cache
-C:\Users\backu\Documents\GitHub\FriendsFX\bin\Release\FriendsFX.deps.json
-C:\Users\backu\Documents\GitHub\FriendsFX\bin\Release\FriendsFX.dll
-C:\Users\backu\Documents\GitHub\FriendsFX\obj\Release\FriendsFX.dll
 C:\Users\backu\Documents\GitHub\FriendsFX\obj\Release\FriendsFX.sourcelink.json
+C:\Users\backu\Documents\GitHub\FriendsFX\obj\Release\FriendsFX.dll
