@@ -1,5 +1,5 @@
 using Dalamud.Interface.Windowing;
-using Dalamud.Interface;
+using ImGuiNET;
 using System.Numerics;
 
 namespace FriendsFX
