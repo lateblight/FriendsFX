@@ -1,5 +1,5 @@
 using Dalamud.Interface.Windowing;
-using ImGuiNET;
+using Dalamud.Interface;
 using System.Numerics;
 
 namespace FriendsFX
@@ -13,7 +13,7 @@ namespace FriendsFX
         {
             this.configuration = configuration;
             Size = new Vector2(400, 350);
-            SizeCondition = (ImGuiCond)ImGuiCond.FirstUseEver;
+            SizeCondition = ImGuiCond.FirstUseEver;
         }
 
         public override void Draw()
@@ -44,7 +44,7 @@ namespace FriendsFX
 
             ImGui.Text("Current Friends List:");
             
-            if (ImGui.BeginChild("FriendScrollRegion", new Vector2(0, 150), true, ImGuiChildFlags.None))
+            if (ImGui.BeginChild("FriendScrollRegion", new Vector2(0, 150), true))
             {
                 for (int i = 0; i < configuration.FriendNames.Count; i++)
                 {

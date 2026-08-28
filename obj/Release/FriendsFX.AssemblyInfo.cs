@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute(("Automatically manages battle effect visibilities for friends anywhere in the worl" +
     "d."))]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.1.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.1.0+dedb641a9ffba01c66f42eb59dbf7a97556250e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.1.0+0146bd15f22ded9c92b8bb8d4282df245dfc0193")]
 [assembly: System.Reflection.AssemblyProductAttribute("FriendsFX")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FriendsFX")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.1.1.0")]
