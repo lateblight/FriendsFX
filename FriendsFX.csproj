@@ -10,7 +10,7 @@
     <Product>FriendsFX</Product>
     <Description>Automatically manages battle effect visibilities for friends anywhere in the world.</Description>
     <Punchline>Full battle effects for friends, limited effects otherwise!</Punchline>
-    <Version>1.1.0.0</Version>
+    <Version>1.1.1.0</Version>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
