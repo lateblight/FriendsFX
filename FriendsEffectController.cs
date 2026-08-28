@@ -49,7 +49,6 @@ namespace FriendsFX
 
             bool friendFoundNearby = false;
 
-            // Scan all rendered player characters in your vicinity regardless of party status
             foreach (var obj in objectTable)
             {
                 if (obj is IPlayerCharacter player)
@@ -61,7 +60,7 @@ namespace FriendsFX
                     if (IsUserAFriend(playerName))
                     {
                         friendFoundNearby = true;
-                        break; // Stop searching once at least one friend is found nearby
+                        break;
                     }
                 }
             }
@@ -72,12 +71,10 @@ namespace FriendsFX
 
                 if (lastKnownFriendState)
                 {
-                    // Friend found anywhere nearby -> Show all effects
                     commandManager.ProcessCommand("/battleeffect party all");
                 }
                 else
                 {
-                    // No friends nearby -> Revert to limited effects
                     commandManager.ProcessCommand("/battleeffect party simple");
                 }
             }

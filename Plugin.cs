@@ -20,7 +20,6 @@ namespace FriendsFX
             configuration = pluginInterface.GetPluginConfig() as Configuration ?? new Configuration();
             configuration.Initialize(pluginInterface);
 
-            // Instantiated with 5 arguments instead of 6 (PartyList removed)
             effectController = new FriendsEffectController(
                 Service.ClientState, 
                 Service.ObjectTable, 

@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "ggEABXjdSF4=",
-  "success": true,
+  "dgSpecHash": "lvmxxvxEqBQ=",
+  "success": false,
   "projectFilePath": "C:\\Users\\backu\\Documents\\GitHub\\FriendsFX\\FriendsFX.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'DalamudLUA (>= 1.0.0)' for 'net8.0'.",
+      "projectPath": "C:\\Users\\backu\\Documents\\GitHub\\FriendsFX\\FriendsFX.csproj",
+      "filePath": "C:\\Users\\backu\\Documents\\GitHub\\FriendsFX\\FriendsFX.csproj",
+      "libraryId": "DalamudLUA",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
