@@ -1,81 +1,17 @@
 {
   "version": 4,
   "targets": {
-    "net10.0-windows": {
-      "DalamudPackager/15.0.0": {
-        "type": "package",
-        "build": {
-          "build/DalamudPackager.props": {},
-          "build/DalamudPackager.targets": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/DalamudPackager.props": {}
-        }
-      },
-      "DotNet.ReproducibleBuilds/2.0.2": {
-        "type": "package",
-        "build": {
-          "buildTransitive/DotNet.ReproducibleBuilds.props": {},
-          "buildTransitive/DotNet.ReproducibleBuilds.targets": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/DotNet.ReproducibleBuilds.props": {},
-          "buildMultiTargeting/DotNet.ReproducibleBuilds.targets": {}
-        }
-      }
-    }
+    "net10.0": {}
   },
-  "libraries": {
-    "DalamudPackager/15.0.0": {
-      "sha512": "411vwC8/X8Z/sQ2TI6v3SvOn66xFPeOjFn3Zn+h0d3Ox2t1kFm66AhDvmx/qcMwVrR+Hidxj0dadpQ2dgyXMBQ==",
-      "type": "package",
-      "path": "dalamudpackager/15.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/DalamudPackager.props",
-        "build/DalamudPackager.targets",
-        "buildMultiTargeting/DalamudPackager.props",
-        "dalamudpackager.15.0.0.nupkg.sha512",
-        "dalamudpackager.nuspec",
-        "tasks/net48/DalamudPackager.dll",
-        "tasks/net48/Newtonsoft.Json.dll",
-        "tasks/net48/YamlDotNet.dll",
-        "tasks/netstandard2.1/DalamudPackager.dll",
-        "tasks/netstandard2.1/Newtonsoft.Json.dll",
-        "tasks/netstandard2.1/YamlDotNet.dll"
-      ]
-    },
-    "DotNet.ReproducibleBuilds/2.0.2": {
-      "sha512": "VaHoEN6YHp0jXucxm67vfuRy8zo9ufiKSuaZ4ZudRi8xmWcEFMKxfCsg2nvYNvdISFTURDu+IHqADGh53+Bamw==",
-      "type": "package",
-      "path": "dotnet.reproduciblebuilds/2.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "build/DotNet.ReproducibleBuilds.props",
-        "build/DotNet.ReproducibleBuilds.targets",
-        "buildMultiTargeting/DotNet.ReproducibleBuilds.props",
-        "buildMultiTargeting/DotNet.ReproducibleBuilds.targets",
-        "buildTransitive/DotNet.ReproducibleBuilds.props",
-        "buildTransitive/DotNet.ReproducibleBuilds.targets",
-        "dotnet.reproduciblebuilds.2.0.2.nupkg.sha512",
-        "dotnet.reproduciblebuilds.nuspec"
-      ]
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net10.0-windows": [
-      "DalamudPackager >= 15.0.0",
-      "DotNet.ReproducibleBuilds >= 1.2.39"
-    ]
+    "net10.0": []
   },
   "packageFolders": {
     "C:\\Users\\backu\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.1.0",
+    "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\backu\\Documents\\GitHub\\FriendsFX\\FriendsFX.csproj",
       "projectName": "FriendsFX",
@@ -87,12 +23,12 @@
         "C:\\Users\\backu\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net10.0-windows"
+        "net10.0"
       ],
       "frameworks": {
-        "net10.0-windows": {
-          "framework": "net10.0-windows7.0",
-          "targetAlias": "net10.0-windows",
+        "net10.0": {
+          "framework": "net10.0",
+          "targetAlias": "net10.0",
           "projectReferences": {}
         }
       },
@@ -100,9 +36,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreLockProperties": {
-        "restorePackagesWithLockFile": "true"
       },
       "restoreAuditProperties": {
         "enableAudit": "true",
@@ -112,20 +45,9 @@
       "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
-      "net10.0-windows": {
-        "framework": "net10.0-windows7.0",
-        "targetAlias": "net10.0-windows",
-        "dependencies": {
-          "DalamudPackager": {
-            "target": "Package",
-            "version": "[15.0.0, )"
-          },
-          "DotNet.ReproducibleBuilds": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[1.2.39, )"
-          }
-        },
+      "net10.0": {
+        "framework": "net10.0",
+        "targetAlias": "net10.0",
         "imports": [
           "net461",
           "net462",
@@ -419,17 +341,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1601",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Dependency specified was DotNet.ReproducibleBuilds (>= 1.2.39) but ended up with DotNet.ReproducibleBuilds 2.0.2.",
-      "libraryId": "DotNet.ReproducibleBuilds",
-      "targetGraphs": [
-        "net10.0-windows"
-      ]
-    }
-  ]
+  }
 }

@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\backu\\Documents\\GitHub\\FriendsFX\\FriendsFX.csproj": {
-      "version": "1.1.0",
+      "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\backu\\Documents\\GitHub\\FriendsFX\\FriendsFX.csproj",
         "projectName": "FriendsFX",
@@ -17,12 +17,12 @@
           "C:\\Users\\backu\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net10.0-windows"
+          "net10.0"
         ],
         "frameworks": {
-          "net10.0-windows": {
-            "framework": "net10.0-windows7.0",
-            "targetAlias": "net10.0-windows",
+          "net10.0": {
+            "framework": "net10.0",
+            "targetAlias": "net10.0",
             "projectReferences": {}
           }
         },
@@ -30,9 +30,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreLockProperties": {
-          "restorePackagesWithLockFile": "true"
         },
         "restoreAuditProperties": {
           "enableAudit": "true",
@@ -42,20 +39,9 @@
         "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
-        "net10.0-windows": {
-          "framework": "net10.0-windows7.0",
-          "targetAlias": "net10.0-windows",
-          "dependencies": {
-            "DalamudPackager": {
-              "target": "Package",
-              "version": "[15.0.0, )"
-            },
-            "DotNet.ReproducibleBuilds": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.2.39, )"
-            }
-          },
+        "net10.0": {
+          "framework": "net10.0",
+          "targetAlias": "net10.0",
           "imports": [
             "net461",
             "net462",
