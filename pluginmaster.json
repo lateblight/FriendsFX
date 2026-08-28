@@ -8,7 +8,7 @@
     "ApplicableVersion": "any",
     "Punchline": "Full battle effects for friends, limited effects for party!",
     "Changelog": "Initial release",
-    "DownloadLinkInstall": "https://raw.githubusercontent.com/lateblight/FriendsFX/main/bin/Release/latest.zip",
-    "DownloadLinkUpdate": "https://raw.githubusercontent.com/lateblight/FriendsFX/main/bin/Release/latest.zip"
+    "DownloadLinkInstall": "https://raw.githubusercontent.com/lateblight/FriendsFX/main/bin/Release/FriendsFX/latest.zip",
+    "DownloadLinkUpdate": "https://raw.githubusercontent.com/lateblight/FriendsFX/main/bin/Release/FriendsFX/latest.zip"
   }
 ]
