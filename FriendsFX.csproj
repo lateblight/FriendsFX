@@ -1,0 +1,19 @@
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>FriendsFX</AssemblyName>
+    <Title>FriendsFX</Title>
+    <Authors>Lateblight</Authors>
+    <Company>Lateblight</Company>
+    <Product>FriendsFX</Product>
+    <Description>Automatically manages battle effect visibilities for friends vs party members.</Description>
+    <Punchline>Full battle effects for friends, limited effects for party!</Punchline>
+    <Version>1.0.0.0</Version>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DalamudPackager" Version="2.1.12" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "RRxoFdQyXSs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\backu\\Documents\\GitHub\\FriendsFX\\FriendsFX.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\backu\\.nuget\\packages\\dalamudpackager\\15.0.0\\dalamudpackager.15.0.0.nupkg.sha512",
+    "C:\\Users\\backu\\.nuget\\packages\\dotnet.reproduciblebuilds\\2.0.2\\dotnet.reproduciblebuilds.2.0.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1601",
+      "level": "Warning",
+      "message": "Dependency specified was DotNet.ReproducibleBuilds (>= 1.2.39) but ended up with DotNet.ReproducibleBuilds 2.0.2.",
+      "projectPath": "C:\\Users\\backu\\Documents\\GitHub\\FriendsFX\\FriendsFX.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\backu\\Documents\\GitHub\\FriendsFX\\FriendsFX.csproj",
+      "libraryId": "DotNet.ReproducibleBuilds",
+      "targetGraphs": [
+        "net10.0-windows"
+      ]
+    }
+  ]
+}
