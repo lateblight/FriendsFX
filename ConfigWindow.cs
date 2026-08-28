@@ -13,7 +13,7 @@ namespace FriendsFX
         {
             this.configuration = configuration;
             Size = new Vector2(400, 350);
-            SizeCondition = ImGuiCond.FirstUseEver;
+            SizeCondition = (ImGuiCond)ImGuiCond.FirstUseEver;
         }
 
         public override void Draw()
@@ -44,7 +44,7 @@ namespace FriendsFX
 
             ImGui.Text("Current Friends List:");
             
-            if (ImGui.BeginChild("FriendScrollRegion", new Vector2(0, 150), true))
+            if (ImGui.BeginChild("FriendScrollRegion", new Vector2(0, 150), true, ImGuiChildFlags.None))
             {
                 for (int i = 0; i < configuration.FriendNames.Count; i++)
                 {
