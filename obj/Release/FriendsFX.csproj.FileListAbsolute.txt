@@ -6,3 +6,4 @@ C:\Users\backu\Documents\GitHub\FriendsFX\obj\Release\FriendsFX.csproj.CoreCompi
 C:\Users\backu\Documents\GitHub\FriendsFX\bin\Release\FriendsFX.deps.json
 C:\Users\backu\Documents\GitHub\FriendsFX\bin\Release\FriendsFX.dll
 C:\Users\backu\Documents\GitHub\FriendsFX\obj\Release\FriendsFX.dll
+C:\Users\backu\Documents\GitHub\FriendsFX\obj\Release\FriendsFX.sourcelink.json

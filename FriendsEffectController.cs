@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Game.ClientState.Objects.SubKinds;
 using Dalamud.Plugin.Services;
@@ -11,7 +10,6 @@ namespace FriendsFX
         private readonly IClientState clientState;
         private readonly IObjectTable objectTable;
         private readonly IFramework framework;
-        private readonly IPartyList partyList;
         private readonly ICommandManager commandManager;
         private readonly Configuration configuration;
 
@@ -22,14 +20,12 @@ namespace FriendsFX
             IClientState clientState, 
             IObjectTable objectTable, 
             IFramework framework, 
-            IPartyList partyList, 
             ICommandManager commandManager,
             Configuration configuration)
         {
             this.clientState = clientState;
             this.objectTable = objectTable;
             this.framework = framework;
-            this.partyList = partyList;
             this.commandManager = commandManager;
             this.configuration = configuration;
 
@@ -43,16 +39,17 @@ namespace FriendsFX
 
             if (!clientState.IsLoggedIn) return;
 
-            EvaluatePartyAndEffects();
+            EvaluateWorldEffects();
         }
 
-        private void EvaluatePartyAndEffects()
+        private void EvaluateWorldEffects()
         {
             var localPlayer = objectTable.LocalPlayer;
             if (localPlayer == null) return;
 
             bool friendFoundNearby = false;
 
+            // Scan all rendered player characters in your vicinity regardless of party status
             foreach (var obj in objectTable)
             {
                 if (obj is IPlayerCharacter player)
@@ -61,12 +58,10 @@ namespace FriendsFX
 
                     string playerName = player.Name.TextValue;
 
-                    if (IsInParty(playerName))
+                    if (IsUserAFriend(playerName))
                     {
-                        if (IsUserAFriend(playerName))
-                        {
-                            friendFoundNearby = true;
-                        }
+                        friendFoundNearby = true;
+                        break; // Stop searching once at least one friend is found nearby
                     }
                 }
             }
@@ -77,30 +72,19 @@ namespace FriendsFX
 
                 if (lastKnownFriendState)
                 {
+                    // Friend found anywhere nearby -> Show all effects
                     commandManager.ProcessCommand("/battleeffect party all");
                 }
                 else
                 {
+                    // No friends nearby -> Revert to limited effects
                     commandManager.ProcessCommand("/battleeffect party simple");
                 }
             }
         }
 
-        private bool IsInParty(string playerName)
-        {
-            foreach (var partyMember in partyList)
-            {
-                if (partyMember.Name.TextValue == playerName)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
         private bool IsUserAFriend(string playerName)
         {
-            // Checks your custom saved configuration list (case-insensitive)
             return configuration.FriendNames.Exists(name => 
                 string.Equals(name, playerName, StringComparison.CurrentCultureIgnoreCase));
         }

@@ -2,8 +2,8 @@
   "Author": "Lateblight",
   "Name": "Friends FX",
   "InternalName": "FriendsFX",
-  "AssemblyVersion": "1.0.0.0",
-  "Description": "Shows all battle effects for friends while keeping party members on limited effects.",
+  "AssemblyVersion": "1.1.0.0",
+  "Description": "Shows all battle effects for friends anywhere in the world.",
   "ApplicableVersion": "any",
   "Tags": [
     "social",
@@ -15,7 +15,7 @@
   "LoadSync": false,
   "CanUnloadAsync": false,
   "LoadPriority": 0,
-  "IconUrl": "https://raw.githubusercontent.com/Lateblight/FriendsFX/main/image/icon.png",
-  "Punchline": "Full battle effects for friends, limited effects for party!",
+  "IconUrl": "https://raw.githubusercontent.com/lateblight/FriendsFX/main/image/icon.png",
+  "Punchline": "Full battle effects for friends, limited effects otherwise!",
   "AcceptsFeedback": true
 }
