@@ -3,12 +3,12 @@
     "Author": "Lateblight",
     "Name": "Friends FX",
     "InternalName": "FriendsFX",
-    "AssemblyVersion": "1.0.0.0",
-    "Description": "Shows all battle effects for friends while keeping party members on limited effects.",
+    "AssemblyVersion": "1.1.0.0",
+    "Description": "Shows all battle effects for friends anywhere in the world.",
     "ApplicableVersion": "any",
-    "Punchline": "Full battle effects for friends, limited effects for party!",
-    "Changelog": "Initial release",
-    "DownloadLinkInstall": "https://raw.githubusercontent.com/lateblight/FriendsFX/main/bin/Release/FriendsFX/latest.zip",
-    "DownloadLinkUpdate": "https://raw.githubusercontent.com/lateblight/FriendsFX/main/bin/Release/FriendsFX/latest.zip"
+    "Punchline": "Full battle effects for friends, limited effects otherwise!",
+    "Changelog": "Global friend effect tracking update",
+    "DownloadLinkInstall": "https://raw.githubusercontent.com/lateblight/FriendsFX/main/bin/Release/latest.zip",
+    "DownloadLinkUpdate": "https://raw.githubusercontent.com/lateblight/FriendsFX/main/bin/Release/latest.zip"
   }
 ]
