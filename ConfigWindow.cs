@@ -1,5 +1,5 @@
-using ImGuiNET;
 using Dalamud.Interface.Windowing;
+using ImGuiNET;
 using System.Numerics;
 
 namespace FriendsFX
@@ -21,7 +21,6 @@ namespace FriendsFX
             ImGui.Text("Welcome to FriendsFX!");
             ImGui.Spacing();
 
-            // Updated text to reflect global tracking anywhere in the world
             ImGui.TextWrapped("Add character names (e.g. Firstname Lastname) of your friends below. When they are nearby anywhere in the world, battle effects will automatically be shown fully!");
             ImGui.Spacing();
 
